@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+@using SportsStore.Domain.Entities
+@model IEnumerable<Product>
+    @{ 
+        ViewBag.Title = "Products";
+    }
+@foreach (var p in Model) {
+<div>
+    <h3>@p.Name</h3>
+    @p.Description
+    <h4>@p.Price.ToString("c")</h4>
+    </div>
+}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div >
+        @RenderBody()
+    </div>
+</body>
+</html>
