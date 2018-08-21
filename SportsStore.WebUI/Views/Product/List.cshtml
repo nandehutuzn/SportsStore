@@ -3,8 +3,7 @@
     ViewBag.Title = "Products";
 }
 
-@foreach (var p in Model.Products)
-{
+@foreach (var p in Model.Products){
 @Html.Partial("ProductSummary", p)
 }
 <div class="pager">
