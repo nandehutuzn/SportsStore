@@ -9,6 +9,8 @@ using SportsStore.Domain.Abstract;
 using SportsStore.Domain.Entities;
 using SportsStore.Domain.Concrete;
 using System.Configuration;
+using SportsStore.WebUI.Infrastructure.Concrete;
+using SportsStore.WebUI.Infrastructure.Abstract;
 
 namespace SportsStore.WebUI.Infrastructure
 {
@@ -41,6 +43,8 @@ namespace SportsStore.WebUI.Infrastructure
 
             _kernel.Bind<IOrderProcessor>().To<EmailOrderProcess>()
                 .WithConstructorArgument("settings", emailSettings);
+
+            _kernel.Bind<IAuthProvider>().To<FormsAuthProvider>();
         }
 
         public object GetService(Type serviceType)
