@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlsAndRoutes", "UrlsAndRou
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlsAndRoutes.Tests", "UrlsAndRoutes.Tests\UrlsAndRoutes.Tests.csproj", "{48688283-EA2B-4CC6-85FC-32560F259047}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllersAndAction", "ControllersAndAction\ControllersAndAction.csproj", "{6BCF39BC-AC99-4968-B334-64458971818D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllersAndAction.Tests", "ControllersAndAction.Tests\ControllersAndAction.Tests.csproj", "{451E0F5F-5B87-4E0E-A9AD-3CB7D2CD2167}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{48688283-EA2B-4CC6-85FC-32560F259047}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48688283-EA2B-4CC6-85FC-32560F259047}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48688283-EA2B-4CC6-85FC-32560F259047}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BCF39BC-AC99-4968-B334-64458971818D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BCF39BC-AC99-4968-B334-64458971818D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BCF39BC-AC99-4968-B334-64458971818D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BCF39BC-AC99-4968-B334-64458971818D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{451E0F5F-5B87-4E0E-A9AD-3CB7D2CD2167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{451E0F5F-5B87-4E0E-A9AD-3CB7D2CD2167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{451E0F5F-5B87-4E0E-A9AD-3CB7D2CD2167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{451E0F5F-5B87-4E0E-A9AD-3CB7D2CD2167}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
