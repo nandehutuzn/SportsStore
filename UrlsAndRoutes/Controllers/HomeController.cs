@@ -9,7 +9,6 @@ namespace UrlsAndRoutes.Controllers
     public class HomeController : Controller
     {
         // GET: Home
-        [Route("Test")]
         public ActionResult Index()
         {
             ViewBag.Controller = "Home";
@@ -29,6 +28,14 @@ namespace UrlsAndRoutes.Controllers
         public string Create(string user, int id)
         {
             return $"User: {user}, ID: {id}";
+        }
+
+        public RedirectToRouteResult MyActionMethod()
+        {
+            string myActionUrl = Url.Action("Index", new { id = "MyId" });
+            string myRouteUrl = Url.RouteUrl(new { controller = "Home", action = "Index" });
+
+            return RedirectToAction("Index");
         }
     }
 }

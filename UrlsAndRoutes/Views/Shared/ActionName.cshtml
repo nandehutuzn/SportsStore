@@ -12,6 +12,15 @@
     <body>
         <div>The controller is : @ViewBag.Controller</div>
         <div>The action is : @ViewBag.Action</div>
+        @*<div>@Html.ActionLink("This is an outgoing URL", "CustomVariable", new { id = "Hello"})</div>*@
+        @*<a href="/Home/CustomVariable">This is an outgoing URL</a>*@
+        @*<div>@Html.ActionLink("This targets another controller", "Index", "Customer")</div>
+        <div>@Html.ActionLink("This is an outgoing URL", "Index", "Home", null, new { id = "myAnchorID", @class = "myCSSClass"})</div>*@
+        <div>
+        This is a URL:
+        @*@Url.Action("Index", "Home", new { id = "MyId"})*@
+            @Html.ActionLink("Click me", "GetlegacyURL", new { legacyURL = "~/old/NET10ClassLibrary" })
+       </div>
     </body>
 </html>
 
