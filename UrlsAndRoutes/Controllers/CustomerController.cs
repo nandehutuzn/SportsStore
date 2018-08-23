@@ -6,9 +6,11 @@ using System.Web.Mvc;
 
 namespace UrlsAndRoutes.Controllers
 {
+    [RoutePrefix("Users")]
     public class CustomerController : Controller
     {
         // GET: Customer
+        [Route("Test")]
         public ActionResult Index()
         {
             ViewBag.Controller = "Customer";
