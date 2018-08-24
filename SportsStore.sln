@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2047
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.Domain", "SportsStore.Domain\SportsStore.Domain.csproj", "{BCD207EF-46BE-4BFC-8540-6FB6D64DDD3E}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllersAndAction", "ControllersAndAction\ControllersAndAction.csproj", "{6BCF39BC-AC99-4968-B334-64458971818D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllersAndAction.Tests", "ControllersAndAction.Tests\ControllersAndAction.Tests.csproj", "{451E0F5F-5B87-4E0E-A9AD-3CB7D2CD2167}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Filters", "Filters\Filters.csproj", "{5DEAFF92-E492-40DD-8C1C-A3EA0CCDAE04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{451E0F5F-5B87-4E0E-A9AD-3CB7D2CD2167}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{451E0F5F-5B87-4E0E-A9AD-3CB7D2CD2167}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{451E0F5F-5B87-4E0E-A9AD-3CB7D2CD2167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DEAFF92-E492-40DD-8C1C-A3EA0CCDAE04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DEAFF92-E492-40DD-8C1C-A3EA0CCDAE04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DEAFF92-E492-40DD-8C1C-A3EA0CCDAE04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DEAFF92-E492-40DD-8C1C-A3EA0CCDAE04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
