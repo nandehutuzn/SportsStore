@@ -1,0 +1,47 @@
+﻿@model string
+@using HelperMethods.Infrastructure
+@{
+    Layout = null;
+}
+
+@*内联辅助器*@
+@helper ListArrayItems(string[] items)
+{
+    <ul>
+    @foreach (string str in items)
+    {
+        <li>@str</li>
+    }
+    </ul>
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        Here are the fruits: @ListArrayItems(ViewBag.Fruits)
+    </div>
+    <div>
+        Here are the cities: @ListArrayItems(ViewBag.Cities)
+    </div>
+    <div>
+        Here is the message:
+        <p>@Model</p>
+    </div>
+    <div>
+        外部辅助方法:
+        <div>
+            Here are the fruits: @Html.ListArrayItems((string[])ViewBag.Fruits)
+        </div>
+        <div>
+            Here are the cities: @Html.ListArrayItems((string[])ViewBag.Cities)
+        </div>
+        @Html.DisplayMessage(Model)
+    </div>
+</body>
+</html>
