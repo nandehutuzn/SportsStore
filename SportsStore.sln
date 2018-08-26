@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperMethods", "HelperMeth
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcModels", "MvcModels\MvcModels.csproj", "{42E66600-5958-4FDA-9C06-360DD5C1F9AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelValidation", "ModelValidation\ModelValidation.csproj", "{C42A41A1-64A8-43D9-ADA3-42DF74C2194C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{42E66600-5958-4FDA-9C06-360DD5C1F9AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42E66600-5958-4FDA-9C06-360DD5C1F9AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42E66600-5958-4FDA-9C06-360DD5C1F9AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C42A41A1-64A8-43D9-ADA3-42DF74C2194C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C42A41A1-64A8-43D9-ADA3-42DF74C2194C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C42A41A1-64A8-43D9-ADA3-42DF74C2194C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C42A41A1-64A8-43D9-ADA3-42DF74C2194C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
