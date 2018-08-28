@@ -35,14 +35,14 @@ namespace SportsStore.WebUI.Infrastructure
             //});
 
             //_kernel.Bind<IProductsRepository>().ToConstant(mock.Object);
-            _kernel.Bind<IProductsRepository>().To<EFProductRepository>();
+            _kernel.Bind<IProductsRepository>().To<EFProductRepository>(); //无参构造函数
 
             EmailSettings emailSettings = new EmailSettings{
                 WriteAsFile = bool.Parse(ConfigurationManager.AppSettings["Email.WriteAsFile"] ?? "false")
             };
 
             _kernel.Bind<IOrderProcessor>().To<EmailOrderProcess>()
-                .WithConstructorArgument("settings", emailSettings);
+                .WithConstructorArgument("settings", emailSettings);//EmailOrderProcess 构造函数含 EmailSettings对象
 
             _kernel.Bind<IAuthProvider>().To<FormsAuthProvider>();
         }
